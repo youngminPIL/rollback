@@ -2,7 +2,7 @@
 
 Official Pytorch implementation of paper:
 
-[Backbone Can Not be Trained at Once: Rolling Back to Pre-trained Network for Person Re-Identification](AAAI 2019).
+**[Backbone Can Not be Trained at Once: Rolling Back to Pre-trained Network for Person Re-Identification]**(AAAI 2019).
 
 
 ## Environment
