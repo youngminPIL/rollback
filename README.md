@@ -10,10 +10,15 @@ Python 3.6, Pytorch 0.4.1, Torchvision, tensorboard(optional)
 
 
 ## Train 
-Train model on the Market-1501 is defult setting
+Default setting:
+- Architecture: ResNet-50
+- Dataset: Market-1501
+- Batch size: 32
+- Image size: 288X144
+- Train 4 period. 
 
 ### prepare
-The dataset path should be changed to your own path(Market-1501 is default).
+The dataset path should be changed to your own path.
 
 Market-1501 dataset are available on http://www.liangzheng.org/Project/project_reid.html
 
@@ -22,7 +27,8 @@ prepare.py
 ```
 ### train network on the each periods. 
 
-Train resnt-50 in period 1. this is the baseline of our algorithm.
+Train model in period 1. This is a baseline of our algorithm.
+
 ```
 train_resnet_p1.py
 ```
@@ -42,8 +48,7 @@ train_resnet_p4.py
 
 ## Test
 
-The test will be done when you train until period 4. 
-
+The test will be done when you complete your trainung up to period 4. 
 ```
 test_resnet.py
 ```
