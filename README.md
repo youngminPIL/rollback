@@ -13,6 +13,9 @@ Python 3.6, Pytorch 0.4.1, Torchvision, tensorboard(optional)
 Train model on the Market-1501 is defult setting
 
 ### prepare
+The dataset path should be changed to your own path(Market-1501 is default).
+Market-1501 dataset are available on http://www.liangzheng.org/Project/project_reid.html
+
 ```
 prepare.py 
 ```
