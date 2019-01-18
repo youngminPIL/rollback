@@ -49,7 +49,7 @@ test_resnet.py
 ## Citation
 
 ```
-@inproceedings{ABdistill,
+@inproceedings{rollback_v1,
 	title = {Backbone Can Not be Trained at Once: Rolling Back to Pre-trained Network for Person Re-Identification
 },
 	author = {Youngmin Ro, Jongwon Choi, Dae Ung Jo, Byeongho Heo, Jongin Lim, Jin Young Choi},
