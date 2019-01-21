@@ -48,8 +48,7 @@ for str_id in str_ids:
 
 target = 'experiment_Result/p4'
 
-#target = 'experiment_rollbackB/base_RE576'
-#target = 'experiment_rebuttal/E2E_high_fixed20epoch'
+
 resize = (288,144)
 opt.batchsize = 64 #test batch
 feature_size = 2048 #resnet 50 
