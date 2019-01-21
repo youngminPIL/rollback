@@ -52,6 +52,9 @@ train_resnet_p4.py
 ## Test
 
 The test will be done when you complete your trainung up to period 4. 
+
+The dataset path(test_dir='/home/ro/Reid/Market/pytorch') should be changed to your own path.
+
 ```
 test_resnet.py
 ```
