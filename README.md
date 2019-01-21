@@ -3,6 +3,8 @@
 Official Pytorch implementation of paper:
 
 **[Backbone Can Not be Trained at Once: Rolling Back to Pre-trained Network for Person Re-Identification]**(AAAI 2019).
+Project page: https://sites.google.com/view/youngmin-ro-vision/home/rollback?authuser=0
+
 
 
 ## Environment
