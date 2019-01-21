@@ -27,7 +27,10 @@ prepare.py
 ```
 ### train network on the each periods. 
 
-Train model in period 1. This is a baseline of our algorithm.
+Train model in period 1. This is a baseline of our algorithm. 
+
+The dataset path(data_dir='/home/ro/Reid/Market/pytorch') should be changed to your own path.
+
 
 ```
 train_resnet_p1.py
