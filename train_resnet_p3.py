@@ -238,7 +238,7 @@ model = load_network_path(model_structure, path)
 
 model_from = ft_net(len(class_names))
 
-nw.dup_net7(model_from, model, 'model.conv1', 'model.bn1', 'model.layer1','xx', 'model.fc', 'classifier') #C1L1L2+FC
+nw.dup_net6(model_from, model, 'model.conv1', 'model.bn1', 'model.layer1','xx', 'model.fc', 'classifier') #C1L1L2+FC
 
 if use_gpu:
     model = model.cuda()
