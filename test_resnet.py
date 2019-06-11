@@ -30,7 +30,7 @@ opt = parser.parse_args()
 
 str_ids = opt.gpu_ids.split(',')
 # which_epoch = opt.which_epoch
-name = opt.name
+#name = opt.name
 #test_dir = '/home/ro/Reid/cuhk03-np/detected/pytorch'
 #num_class = 767
 #test_dir = '/home/ro/Reid/Duke/pytorch'
@@ -46,14 +46,14 @@ for str_id in str_ids:
         gpu_ids.append(id)
 
 
-target = 'experiment_Result/p4'
+target = 'experiment_Result/p1'
 
 
 resize = (288,144)
 opt.batchsize = 64 #test batch
 feature_size = 2048 #resnet 50 
 
-gpu_ids[0] = 0
+gpu_ids[0] = 1
 # set gpu id2
 if len(gpu_ids) > 0:
     torch.cuda.set_device(gpu_ids[0])
@@ -230,12 +230,9 @@ for file_name in file_list:
     model_structure = ft_net(num_class) #market
     model = load_network_path(model_structure, path)
     # Remove the final fc layer and classifier layer
-    if not opt.PCB:
-        model.model.fc = nn.Sequential()
-        model.classifier = nn.Sequential()
-    else:
-        model = PCB_test(model)
-
+    model.model.fc = nn.Sequential()
+    model.classifier = nn.Sequential()
+        
     # Change to test mode
     model = model.eval()
     if use_gpu:
